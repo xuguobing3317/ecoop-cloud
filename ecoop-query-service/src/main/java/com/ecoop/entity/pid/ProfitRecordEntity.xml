@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<entity-mappings xmlns="http://java.sun.com/xml/ns/persistence/orm"
+        version="2.0">
+
+    <entity class="com.ecoop.entity.pid.ProfitRecordEntity">
+        <table name="profit_record" schema="pid_mv" catalog=""/>
+        <attributes>
+            <id name="profitRecordId">
+                <column name="profit_record_id"/>
+            </id>
+            <basic name="profitMoney">
+                <column name="profit_money"/>
+            </basic>
+            <basic name="profitType">
+                <column name="profit_type"/>
+            </basic>
+            <basic name="remark">
+                <column name="remark"/>
+            </basic>
+            <basic name="tnWalletId">
+                <column name="tn_wallet_id"/>
+            </basic>
+            <basic name="bCreateuser">
+                <column name="B_CREATEUSER"/>
+            </basic>
+            <basic name="bCreatetime">
+                <column name="B_CREATETIME"/>
+            </basic>
+            <basic name="bLastupdateuser">
+                <column name="B_LASTUPDATEUSER"/>
+            </basic>
+            <basic name="bLastupdatetime">
+                <column name="B_LASTUPDATETIME"/>
+            </basic>
+            <basic name="bTransactionid">
+                <column name="B_TRANSACTIONID"/>
+            </basic>
+            <basic name="bDeletetime">
+                <column name="B_DELETETIME"/>
+            </basic>
+            <basic name="bReferenceorder">
+                <column name="B_REFERENCEORDER"/>
+            </basic>
+            <basic name="bCurrenttoken">
+                <column name="B_CURRENTTOKEN"/>
+            </basic>
+            <basic name="version">
+                <column name="VERSION"/>
+            </basic>
+            <basic name="contractPayout">
+                <column name="contract_payout"/>
+            </basic>
+            <basic name="contractGrossProfiti">
+                <column name="contract_gross_profiti"/>
+            </basic>
+            <basic name="profitNumber">
+                <column name="profit_number"/>
+            </basic>
+            <basic name="payableContract">
+                <column name="payable_contract"/>
+            </basic>
+            <basic name="contractType">
+                <column name="contract_type"/>
+            </basic>
+            <basic name="cid">
+                <column name="cid"/>
+            </basic>
+            <basic name="netProfit">
+                <column name="net_profit"/>
+            </basic>
+            <basic name="contractCost">
+                <column name="contract_cost"/>
+            </basic>
+            <basic name="avaliableCost">
+                <column name="avaliable_cost"/>
+            </basic>
+        </attributes>
+    </entity>
+</entity-mappings>

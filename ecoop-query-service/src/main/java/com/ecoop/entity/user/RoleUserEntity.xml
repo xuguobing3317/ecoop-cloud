@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<entity-mappings xmlns="http://java.sun.com/xml/ns/persistence/orm"
+        version="2.0">
+
+    <entity class="com.ecoop.entity.user.RoleUserEntity">
+        <table name="role_user" schema="zsuser_mv" catalog=""/>
+        <attributes>
+            <id name="roleUserId">
+                <column name="role_user_id"/>
+            </id>
+            <basic name="roleName">
+                <column name="role_name"/>
+            </basic>
+            <basic name="isCanDelete">
+                <column name="is_can_delete"/>
+            </basic>
+            <basic name="description">
+                <column name="description"/>
+            </basic>
+            <basic name="bCreateuser">
+                <column name="B_CREATEUSER"/>
+            </basic>
+            <basic name="bCreatetime">
+                <column name="B_CREATETIME"/>
+            </basic>
+            <basic name="bLastupdateuser">
+                <column name="B_LASTUPDATEUSER"/>
+            </basic>
+            <basic name="bLastupdatetime">
+                <column name="B_LASTUPDATETIME"/>
+            </basic>
+            <basic name="bTransactionid">
+                <column name="B_TRANSACTIONID"/>
+            </basic>
+            <basic name="bDeletetime">
+                <column name="B_DELETETIME"/>
+            </basic>
+            <basic name="userId">
+                <column name="user_id"/>
+            </basic>
+        </attributes>
+    </entity>
+</entity-mappings>

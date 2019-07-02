@@ -1,0 +1,25 @@
+server:
+  port: 9001
+spring:
+  application:
+    name: ecoop-eureka
+eureka:
+  instance:
+    hostname: e1
+  client:
+    serviceUrl:
+      defaultZone: http://ecoop:ecoop@e2:9002/eureka/,http://ecoop:ecoop@e3:9003/eureka/
+
+security:
+  basic:
+    enabled: true
+  user:
+    name: ecoop
+    password: ecoop
+
+
+
+
+
+
+

@@ -1,0 +1,47 @@
+server:
+  port: 8001
+  tomcat:
+    uri-encoding: UTF-8
+
+
+eureka:
+  client:
+    fetch-registry: true
+    register-with-eureka: true
+    serviceUrl:
+      defaultZone: http://ecoop:ecoop@e1:9001/eureka/,http://ecoop:ecoop@e2:9002/eureka/,http://ecoop:ecoop@e3:9003/eureka/
+
+
+
+spring:
+  application:
+    name: ecoop-zuul
+  boot:
+    admin:
+      url: http://localhost:${server.port}
+  jackson:
+    serialization:
+      indent_output: true
+  http:
+    encoding:
+      charset: UTF-8
+      force: true
+      enabled: true
+
+zuul:
+  routes:
+    queryApi:
+     path: /query-service/**
+     serviceId: ecoop-query-service
+
+hystrix:
+  command:
+    default:
+      execution:
+        isolation:
+          thread:
+            timeoutInMilliseconds: 60000  #设置API网关中路由转发请求的HystrixCommand执行超时时间
+
+ribbon:
+  ReadTimeout: 60000
+  ConnectTimeout: 60000

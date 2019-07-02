@@ -1,0 +1,27 @@
+server:
+  port: 9003
+spring:
+  application:
+    name: ecoop-eureka
+eureka:
+  instance:
+    hostname: e3
+  client:
+    serviceUrl:
+      defaultZone: http://ecoop:ecoop@e1:9001/eureka/,http://ecoop:ecoop@e2:9002/eureka/
+
+
+
+security:
+  basic:
+    enabled: true
+  user:
+    name: ecoop
+    password: ecoop
+
+
+
+
+
+
+

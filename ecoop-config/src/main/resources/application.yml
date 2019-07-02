@@ -1,0 +1,20 @@
+server:
+  port: 9999
+spring:
+  application:
+    name: ecoop-config
+  cloud:
+    config:
+      server:
+        git:
+          uri: https://github.com/xuguobing3317/ecoop.git
+          search-paths: data/config/ecoop-config-repo
+      label: master
+eureka:
+  client:
+    fetch-registry: true
+    register-with-eureka: true
+    serviceUrl:
+      defaultZone: http://ecoop:ecoop@e1:9001/eureka/,http://ecoop:ecoop@e2:9002/eureka/,http://ecoop:ecoop@e3:9003/eureka/
+
+
