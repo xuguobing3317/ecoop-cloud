@@ -70,7 +70,7 @@ public class TokenFilter extends ZuulFilter {
         HttpServletRequest request = ctx.getRequest();
         String url = request.getRequestURI();
 
-        if (url.indexOf("api-docs") > 0 || url.indexOf("sock-js") > 0) {
+        if (url.indexOf("sock-js") > 0) {
 
         } else {
             String token = request.getParameter("token");
