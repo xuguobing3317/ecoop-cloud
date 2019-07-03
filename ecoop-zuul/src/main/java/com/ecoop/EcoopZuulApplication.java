@@ -1,5 +1,6 @@
 package com.ecoop;
 
+import com.github.mthizo247.cloud.netflix.zuul.web.socket.EnableZuulWebSocket;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 import org.springframework.cloud.netflix.eureka.EnableEurekaClient;
@@ -17,6 +18,7 @@ import springfox.documentation.swagger2.annotations.EnableSwagger2;
 @EnableZuulProxy
 @EnableEurekaClient
 @EnableSwagger2
+@EnableZuulWebSocket
 public class EcoopZuulApplication {
 
     public static void main(String[] args) {

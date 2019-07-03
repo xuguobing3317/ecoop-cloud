@@ -31,8 +31,19 @@ spring:
 zuul:
   routes:
     queryApi:
-     path: /query-service/**
-     serviceId: ecoop-query-service
+      path: /query-service/**
+      serviceId: ecoop-query-service
+    queryWs:
+      path: /**
+#      url: http://localhost:6101
+      service-id:  ecoop-query-service
+      customSensitiveHeaders: true
+    ws:
+      brokerages:
+        queryWs:
+          end-points: /socket-js
+          brokers:  /topic
+          destination-prefixes: /app
 
 hystrix:
   command:
