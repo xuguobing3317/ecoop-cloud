@@ -6,7 +6,7 @@ ecoop-eureka: 注册中心
 
 ecoop-query-service: 查询服务
 
-ecoop-zuul: 网关，负载均衡&路由
+ecoop-gateway: 网关，负载均衡&路由
 
 
 
@@ -24,13 +24,23 @@ ecoop-zuul: 网关，负载均衡&路由
 
 全部启动完成之后：
 
-http://127.0.0.1:8001/query-service/query  不能访问
-http://127.0.0.1:8001/query-service/query?token=1  带token可以访问
+http://127.0.0.1:8888/queryApi/query  不能访问
+http://127.0.0.1:8888/queryApi/query?token=1  带token可以访问
 
-http://127.0.0.1:8001/query-service/auth?token=1  //带token， 但无接口权限
+http://127.0.0.1:8888/queryApi/auth?token=1  //带token， 但无接口权限
 
 websocket 做了zuul的穿透
 websocket.html是websocket的测试页面
-http://127.0.0.1:8001/query-service/msg?token=1 //通过该连接，可给前端发送消息
+http://127.0.0.1:8888/queryApi/msg?token=1 //通过该连接，可给前端发送消息
 
 在service中有单个接口的权限控制
+
+nexus的私服
+settings.xml 是maven的配置文件
+私服地址为：http://114.216.202.69:8081
+
+
+https://worktable.coop-e.com/eureka  是我们这边测试环境注册中心 用户名/密码：ecoop/ecoop
+https://worktable.coop-e.com/queryApi nginx反向代理到相关服务， 此处是queryApi
+
+

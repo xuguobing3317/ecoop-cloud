@@ -10,9 +10,9 @@
     <modules>
         <module>ecoop-eureka</module>
         <module>ecoop-config</module>
-        <module>ecoop-zuul</module>
         <module>ecoop-query-service</module>
         <module>ecoop-commons</module>
+        <module>ecoop-gateway</module>
     </modules>
 
     <packaging>pom</packaging>

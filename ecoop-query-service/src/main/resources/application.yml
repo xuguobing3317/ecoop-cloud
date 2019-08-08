@@ -3,6 +3,11 @@ spring:
     active: dev
   jpa:
     show-sql: true
+  application:
+    name: ecoop-query-service
 
 
 
+server:
+  servlet:
+    context-path: /ecoop-query-service

@@ -1,0 +1,15 @@
+server:
+  port: 8888
+  tomcat:
+    uri-encoding: UTF-8
+
+
+eureka:
+  client:
+    fetch-registry: true
+    register-with-eureka: true
+    serviceUrl:
+      defaultZone: http://ecoop:ecoop@e1:9001/eureka/#,http://ecoop:ecoop@e2:9002/eureka/,http://ecoop:ecoop@e3:9003/eureka/
+    healthcheck: true
+
+

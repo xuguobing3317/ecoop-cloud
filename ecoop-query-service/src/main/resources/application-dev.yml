@@ -1,8 +1,6 @@
 server:
   port: 6101
 spring:
-  application:
-    name: ecoop-query-service
   datasource:
     dbpid:
       driver-class-name: com.mysql.cj.jdbc.Driver
@@ -62,7 +60,7 @@ spring:
 eureka:
   client:
     serviceUrl:
-      defaultZone: http://ecoop:ecoop@e1:9001/eureka/,http://ecoop:ecoop@e2:9002/eureka/,http://ecoop:ecoop@e3:9003/eureka/
+      defaultZone: https://ecoop:ecoop@worktable.coop-e.com/eureka
 
 ribbon:
   eureka:

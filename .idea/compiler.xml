@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="CompilerConfiguration">
+    <annotationProcessing>
+      <profile name="Maven default annotation processors profile" enabled="true">
+        <sourceOutputDir name="target/generated-sources/annotations" />
+        <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
+        <outputRelativeToContentRoot value="true" />
+        <module name="ecoop-commons" />
+        <module name="ecoop-config" />
+        <module name="ecoop-eureka" />
+        <module name="ecoop-gateway" />
+        <module name="ecoop-query-service" />
+      </profile>
+    </annotationProcessing>
+    <bytecodeTargetLevel>
+      <module name="ecoop-cloud" target="1.8" />
+      <module name="ecoop-commons" target="1.8" />
+      <module name="ecoop-config" target="1.8" />
+      <module name="ecoop-eureka" target="1.8" />
+      <module name="ecoop-gateway" target="1.8" />
+      <module name="ecoop-query-service" target="1.8" />
+      <module name="ecoop-zuul" target="1.8" />
+    </bytecodeTargetLevel>
+  </component>
+  <component name="JavacSettings">
+    <option name="ADDITIONAL_OPTIONS_OVERRIDE">
+      <module name="ecoop-gateway" options="-parameters" />
+      <module name="ecoop-query-service" options="-parameters" />
+    </option>
+  </component>
+</project>
